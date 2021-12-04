@@ -1,0 +1,53 @@
+div.post-feed {
+    padding-bottom: 0px !important;
+}
+
+/* cadre */
+div.pagination {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+ul.pagination {
+    list-style-type: none;
+    list-style: none;
+    margin: 0px 0px;
+    padding: 3px;
+    text-align: center;
+}
+
+li.page-item {
+    list-style: none;
+    text-align: center;
+    width: 60px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+.page-item li a {
+    text-decoration: none;
+    display: block;
+}
+
+a.page-link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: #e3e9ed;
+    border-radius: 10px;
+}
+
+.page-item li a:hover {
+    text-decoration: none;
+}
+
+a.page-link:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+li.active a {
+    background-color: #44b2f3;
+}

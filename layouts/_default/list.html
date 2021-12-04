@@ -22,10 +22,14 @@
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
         <div class="post-feed">
-            {{ range $index, $element := .Pages }}
-                {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
+            {{ $paginator := .Paginate (where .Data.Pages "Type" .Type) }}
+            {{ range $index, $element := $paginator.Pages }}
+            {{- partial "post-card.html" (dict "context" . "index" $index "home" $.IsHome) -}}
             {{ end }}
         </div>
+    </div>
+    <div class="pagination">
+        {{ template "_internal/pagination.html" . }}
     </div>
 </main>
 
